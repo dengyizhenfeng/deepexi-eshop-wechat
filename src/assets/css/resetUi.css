@@ -1,0 +1,227 @@
+.find-tabs{
+    padding-top: 1.867rem  /* 70/37.5 */;
+}
+.find-tabs .van-tabs__wrap {
+    height: 1.867rem  /* 70/37.5 */!important;
+    width: 60%;
+    padding-right: 18%;
+    padding-left:22%;
+    color: #7F7F7F;
+    font-size: 0.4rem  /* 15/37.5 */;
+    box-shadow: 0rem  /* 0/37.5 */ 0.05rem 0.267rem  /* 10/37.5 */ #E2E2E2;
+}
+.find-tabs .van-tab {
+    line-height: 1.867rem  /* 70/37.5 */;
+}
+.find-tabs .van-tabs__content{
+  margin-top: .5rem;
+}
+
+
+.find-tabs .van-tabs__line {
+  bottom: .9rem !important;
+  height: .03rem;
+  }
+.find-tabs .van-tab--active{
+  font-weight: bold;
+  font-size: .45rem;
+}
+
+.nav  .van-tabs__wrap {
+    height: 2.026667rem !important;
+    box-shadow: 0rem  /* 0/37.5 */ 0.08rem  /* 3/37.5 */ 0.16rem  /* 6/37.5 */ #ccc !important;
+    padding: 0 20%;
+  }
+  .nav .van-tab--active{
+    font-weight: bold;
+    font-size: .45rem;
+  }
+
+  .nav .van-tab__pane{
+    margin-top: .8rem
+  }
+
+  .nav .van-tab {
+    line-height: 2.026667rem !important;
+  }
+
+  .nav .van-tabs__line {
+    bottom: .8rem !important;
+  }
+
+  .checkbox .van-checkbox__icon .van-icon{
+    margin-top:1.2rem
+  }
+
+  .radio .van-radio__icon {
+    height: 0.533rem  /* 20/37.5 */;
+    /* margin-top: 1.306667rem !important; */
+    margin-left: .4rem
+}
+
+.carDetail-tabbar {
+    box-shadow: 0 0 0.16rem  /* 6/37.5 */ 0 rgba(204,204,204,0.5);
+}
+.carDetail-tabbar .buyCar-btn {
+    flex: 2;
+    background-color: #0BC5B1;
+    color: #ffffff;
+    font-size: 0.48rem /* 18/37.5 */;
+    margin: .15rem 0;
+    margin-right: .4rem;
+    border-radius: 5rem;
+}
+.carDetail-tabbar .buyCar-btn .van-tabbar-item__text{
+    margin-top: -.1rem;
+}
+.carDetail-tabbar .van-tabbar-item--active{
+    color: #7d7e80;
+}
+
+.fourForm .van-cell {
+  margin-bottom:.24rem;
+}
+.fourForm.van-cell-group{
+  background: #fafafa;
+}
+.fourForm .van-field__body input{
+  text-align: right;
+}
+.van-picker-column__item {
+  color: #969799;
+  margin-left: .4rem;
+  border-bottom: 0;
+}
+.van-picker-column__item--selected {
+  font-weight: 500;
+  color: rgb(12, 173, 121) !important;
+}
+.recommendCar-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.recommendCar-footer .van-button--primary {
+    background-color: #0BC5B1;
+    border: 0.027rem  /* 1/37.5 */ solid #0BC5B1;
+}
+.recommendCar-footer .van-button {
+    font-size: 0.48rem;
+}
+.recommendCar-footer > button.prev-btn {
+    color: #363347;
+}
+.recommendCar-btn-list > button.active {
+    background-color: #0BC5B1;
+    color: #ffffff;
+}
+.formTwo,.createNews .van-cell {
+  /* font-weight: 900; */
+}
+.formTwo .van-cell input{
+  /* text-align: right; */
+  font-weight: 400;
+}
+.createNews .txtarea .van-field__label{
+  margin-bottom: .373rem;
+}
+
+.citySelect,.indexList .mint-indexlist-navitem {
+  color:rgba(244,163,28,1);
+}
+.citySelect .mint-indexlist {
+  max-height: 70vh;
+  overflow: auto;
+}
+.citySelect .mint-indexsection-index {
+  background-color: white;
+  color:#656565;
+  margin-left: .4rem;
+  padding-top: .5rem !important;
+}
+.indexList .mint-indexsection-index {
+  background-color: white;
+  color:#656565;
+}
+.myOrder-search .van-search__content {
+    background-color: #EFEFEF;
+    border-radius: 0.533rem  /* 20/37.5 */;
+}
+
+.searchPage .van-search .van-cell {
+  border-radius: .466667rem;
+  background:rgba(245,245,245,1);
+}
+.searchPage .search{
+  background: white !important
+}
+.searchPage .van-search__action {
+  color: #0CAD79;
+}
+
+.trySelect .van-radio__icon, .van-radio__label {
+  margin-left: .4rem;
+}
+
+.carsholist .van-radio__icon--round .van-icon {
+  border-radius: 100%;
+  /* margin-top: 1.3rem; */
+}
+
+.mint-indexlist-content{
+  height: 100% !important;
+}
+.sendSMSBtn{
+    width: 2.133rem!important;
+}
+
+.radio .van-radio__label {
+  margin-left: .4rem;
+  width: 100% !important;
+}
+
+.citySelect .mint-cell-wrapper{
+  background-image:none !important;
+}
+
+.pullUp-refresh-list .van-loading {
+    margin: 0;
+}
+
+.van-picker__cancel, .van-picker__confirm {
+  color:  #0CAD79;
+  padding: 0 0.4rem  /* 15/37.5 */;
+  font-size: 0.373rem  /* 14/37.5 */;
+}
+
+.van-dialog__message {
+     font-size: 0.427rem  /* 16/37.5 */;
+}
+.van-dialog__header{
+  padding:0.4rem 0;
+}
+.van-dialog__message--has-title{
+  padding-top: 0.667rem  /* 25/37.5 */;
+}
+.van-dialog__cancel, .van-dialog__cancel:active{
+  background: #fafafa;
+}
+.van-dialog__confirm, .van-dialog__confirm:active {
+    background: #0BC5B1;
+    color: #fff;
+}
+.van-dialog__content {
+  max-height: 70vh;
+  padding: 0.533rem  /* 20/37.5 */;
+  overflow: auto;
+}
+.van-field__control {
+  font-size: 0.4rem  /* 15/37.5 */;
+}
+
+.van-cell {
+  font-size: 0.4rem!important;
+}
+

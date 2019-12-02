@@ -1,0 +1,222 @@
+html {
+  /* font-family:'PingFang-SC-Bold'; */
+  /* font-family: "Helvetica Neue", Helvetica, Arial, SegoeUI, "Microsoft Yahei", 微软雅黑, "Hiragino Sans GB", STHeiti, 华文细黑, sans-serif; */
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  /* letter-spacing: .1rem; */
+}
+body,html,div,ul,li{
+  margin:0;
+  padding:0;
+}
+.pages{
+  padding: 0 .4rem;
+  padding-bottom: 1.227rem;
+}
+/*
+font-size
+*/
+.ft-12{
+  font-size:.32rem;
+}
+.ft-13{
+  font-size: .346667rem;
+}
+.ft-14{
+  font-size: .373333rem;
+}
+.ft-15{
+  font-size: .4rem;
+}
+.ft-16{
+  font-size: .426667rem;
+}
+.ft-17{
+  font-size: .453333rem
+}
+.ft-18{
+  font-size: .48rem
+}
+
+
+.wrapper-padding {
+  padding-left: 0.4rem ;
+  padding-right: 0.4rem ;
+}
+.pages-bottom {
+  margin-bottom: 1.6rem;
+}
+
+
+[class*=van-hairline]::after {
+  border: 0 solid transparent !important;
+}
+
+/*
+swipe
+*/
+.van-swipe__indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: .5rem !important;
+  -webkit-transform: translateX(-50%) ;
+  transform: translateX(-50%);
+}
+
+.van-picker-column {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  font-size: 0.427rem  /* 16/37.5 */;
+  text-align: left !important;
+}
+
+.no-data {
+  margin: 0;
+  text-align: center;
+  font-size: 0.4rem  /* 15/37.5 */;
+}
+
+.intercept-line-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.intercept-line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
+}
+
+
+
+
+
+/*mint
+*/
+.mint-indexsection-index {
+  margin: 0;
+  padding: 0.107rem  /* 4/37.5 */ !important;
+  font-size: .426667rem;
+  background-color: #fafafa;
+}
+/*
+map
+*/
+.anchorBL{
+    height: .266667rem;
+    position: absolute;
+    z-index: 30;
+    text-size-adjust: none;
+    bottom: .766667rem !important;
+    left: 0.027rem  /* 1/37.5 */;
+}
+
+.input{
+  width: 1.733333rem !important;
+  height: .666667rem !important;
+  background:rgba(240,240,240,1) !important;
+  border-radius:0.107rem  /* 4/37.5 */ !important;
+  font-size: .32rem;
+  border: none;
+  padding-left:0.133rem  /* 5/37.5 */
+}
+
+.btn-small{
+height: .666667rem;
+background:rgba(12,173,121,1);
+border-radius:0.107rem  /* 4/37.5 */;
+font-size: .373333rem;
+font-weight:500;
+color:rgba(255,255,255,1);
+line-height: .533333rem;
+letter-spacing:0.027rem  /* 1/37.5 */;
+border:none;
+padding: 0 .3rem
+}
+
+.whiteBtn{
+  width: 6.186667rem;
+  height: 1.2rem;
+  background:rgba(255,255,255,1);
+  box-shadow:0rem  /* 0/37.5 */ 0.027rem  /* 1/37.5 */ 0.213rem  /* 8/37.5 */ 0rem  /* 0/37.5 */ rgba(204,204,204,0.5);
+  border-radius: .666667rem;
+  font-size: .4rem;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+  line-height: .533333rem;
+  letter-spacing:0.027rem  /* 1/37.5 */;
+  border:none
+}
+.next{
+  width: 100%;
+height: 1.333333rem;
+background:#0BC5B1;
+border-radius:0  /* 4/37.5 */;
+font-size: 0.48rem  /* 18/37.5 */;
+font-weight:500;
+color:rgba(255,255,255,1);
+line-height: .533333rem;
+letter-spacing:0.027rem  /* 1/37.5 */;
+border:none;
+margin-bottom: 0;
+}
+.lightBtn{
+  width: 100%;
+height: 1.333333rem;
+background:rgba(238, 249, 245, 1);
+border-radius:0.107rem  /* 4/37.5 */;
+font-size: .373333rem;
+font-weight:500;
+color:rgba(11, 197, 177, 1);
+line-height: .533333rem;
+letter-spacing:0.027rem  /* 1/37.5 */;
+border:none;
+margin-bottom: .133333rem
+}
+.finsh .lightBtn{
+  width:4.8rem;
+  margin: 0 auto;
+}
+
+.arrowRight{
+  font-size: 0.373rem  /* 14/37.5 */;
+  color: #999999;
+}
+
+.section-padding {
+  padding: 0.48rem  /* 18/37.5 */ 0.4rem  /* 15/37.5 */;
+}
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+.border-bottom {
+  border-bottom: 0.187rem  /* 7/37.5 */ solid #FAFAFA;
+}
+.fixed-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.image-wrapper {
+  width: 3.466rem!important;
+}
+.image-wrapper > img {
+  height: 2.4rem!important;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

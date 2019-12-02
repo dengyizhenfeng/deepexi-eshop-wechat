@@ -1,0 +1,530 @@
+/* base */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    color: #fff;
+    -webkit-tap-highlight-color:transparent;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+img{ display: block;}
+input,button{outline: none;}
+input::-webkit-input-placeholder{
+    color: #BCBCBC;
+}
+@keyframes puffIn {
+  0% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(2, 2);
+      filter: blur(2px);
+  }
+  100% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+  }
+}
+.puffIn{
+	animation-name: puffIn;
+	-webkit-animation-name: puffIn;
+}
+.swiper-container {
+    /* Specify Swiper's Size: */
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide {
+    /* Specify Slides's Size: */
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-size: 100% 100%; 
+    background-origin: content-box;
+}
+.arrow {
+    display: block;
+    width: .4rem;
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    margin-left: -.2rem;
+    opacity: .8;
+    -webkit-animation: arrow 2.5s infinite ease-in-out;
+    z-index: 999;
+}
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 0px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translate(0, -5px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, -10px);
+    }
+}
+/* 设计稿基于750px  rem换算 100 = 1rem */
+/* page1 */
+.pageFirst{
+	background: url(./../image/introduction/bg-first.png) no-repeat;
+	background-position: bottom center;
+	background-size: 100% 115%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.pageFirst .logo-slogan{
+	width: 6.41rem;
+	margin: 0.9rem auto 0 auto;
+}
+.pageFirst .content{
+	width: 100%;
+	position: relative;
+}
+.pageFirst .content img{
+	width: 100%;
+}
+.pageFirst .content p{
+	padding: 0 0.69rem;
+	font-size:0.28rem;
+	font-family:PingFangSC-Regular;
+	font-weight:400;
+	color:rgba(68,68,68,1);
+	 text-indent:.70rem;
+	 line-height: .5rem;
+}
+.pageFirst .content button{
+	display: block;
+	width:52.5%;
+	height:.67rem;
+	background:rgba(8,175,120,1);
+	border-radius:.10rem;
+	font-size:.28rem;
+	font-family:PingFangSC-Medium;
+	font-weight:500;
+	color:rgba(255,255,255,1);
+	border-color: rgba(8,175,120,1);
+	position: absolute;
+	left: 23.75%;
+	bottom: 1.5rem;
+	border: none;
+	z-index:9;
+}
+/* 弹框样式 */
+.model{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background:rgba(0,0,0,0.5);
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 999;
+}
+.model .model-title{
+	background-color: transparent;
+	width: 6.84rem;
+	height: 1.84rem;
+	background: url(../image/introduction/logo-model.png) no-repeat center center;
+	background-size: cover;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	font-size:.4rem;
+	font-family:PingFangSC-Semibold;
+	font-weight:600;
+	color:rgba(255,255,255,1);
+	margin-bottom: -0.8rem;
+	z-index: 4;
+}
+.model-body{
+	width: 5.54rem;
+	background-color: #FFFFFF;
+	padding: 1.1rem 0.64rem 0.5rem 0.64rem;
+	max-height: 6.3rem;
+	overflow-y: scroll;
+	border-radius:0.2rem;
+}
+.model-body::-webkit-scrollbar{
+	width: 0.09rem;
+}
+.model-body::-webkit-scrollbar-thumb{
+	background-color: #0DC5B0;
+}
+.model-body p{
+	font-size:0.28rem;
+	font-family:PingFangSC-Regular;
+	font-weight:400;
+	color:rgba(68,68,68,1);
+	line-height: 0.5rem;
+	text-indent: 0.7rem;
+}
+.model-body p span{
+	color: #0DC5B0;
+}
+.btn-close{
+	width: 0.89rem;
+	height: 0.89rem;
+	margin-top: -0.32rem;
+	z-index: 4;
+}
+/* 第二页 */
+.pageSecond{
+	background-color: #fff;
+}
+.pageSecond .content{
+	position: absolute;
+	width: 100%;
+	top: 1.2rem;
+	z-index: 3;
+}
+.pageSecond .page2-logo1{
+	width: 100%;
+	height: 2.08rem;
+}
+.pageSecond .page2-logo2{
+	width: 1.57rem;
+	height: 2.07rem;
+	position: absolute;
+	right: 0.1rem;
+	bottom: 0.1rem;
+	z-index: 4;
+}
+.pg2-title{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 0.4rem;
+}
+.pg2-title .title-box{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+.pg2-title .title-box h3{
+	font-size:0.71rem;
+	font-family:FZLTTHK--GBK1-0;
+	font-weight:800;
+	color:rgba(8,175,120,1);
+	margin: 0 4px 0 0;
+}
+.pg2-title .title-box span{
+	font-size:0.18rem;
+	font-family:FZLTZHK--GBK1-0;
+	font-weight:600;
+	color:rgba(7,199,175,1);
+}
+.pg2-title .title-box p{
+	font-size:0.42rem;
+	font-family:FZLTZHK--GBK1-0;
+	font-weight:600;
+	color:rgba(84,84,84,1);
+}
+.pg2-title .label{
+	font-size:0.28rem;
+	font-family:PingFangSC-Regular;
+	font-weight:bold;
+	color:rgba(108,108,108,1);
+	margin: 0.3rem auto;
+}
+.pageSecond .contrast{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 6.22rem;
+	margin: 0 auto 0.3rem auto;
+}
+.pageSecond .contrast-item{
+	background:rgba(230,249,247,1);
+	width: 42%;
+	padding: 0.6rem 3%;
+	position: relative;
+	border-radius: 5px;
+}
+.pageSecond .title{
+	width: 100%;
+	text-align: center;
+	font-size: 0.32rem;
+    font-family: FZLTTHK--GBK1-0;
+    font-weight: 800;
+    color: rgba(8,175,120,1);
+	position: absolute;
+	top: -0.2rem;
+	left: 0;
+}
+.pageSecond .text{
+	font-size:0.26rem;
+	font-family:PingFangSC-Regular;
+	font-weight:400;
+	color:rgba(68,68,68,1);
+	line-height:0.48rem;
+	text-align: center;
+}
+.pageSecond .text span{
+	color: #07C7AF;
+}
+.pageSecond .stamp{
+	width: 2.33rem;
+	height: 2.33rem;
+	position: absolute;
+	left: -0.3rem;
+	top: -1rem;
+}
+.pageSecond .pk-box {
+	position: absolute;
+	bottom: -0.3rem;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.pageSecond .pk-cont{
+	width: 100%;
+	position: relative;
+}
+.pageSecond .pk-img{
+	width: 1.38rem;
+	height: 0.64rem;
+	margin: 0 auto;
+	
+	
+}
+/* 第三页 */
+.pageThird .model-body p{
+	text-indent: 0;
+}
+.pageThird{
+	background: url(../image/introduction/bg-third.png) no-repeat;
+	background-position: bottom center;
+	background-size: 100% 110%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.pageThird .content {
+	width: 92.8%;
+	height: 100%;
+	margin:  0 auto;
+	background: url(../image/introduction/bg-page3.png) no-repeat center 3.7rem;
+	background-size:5.98rem 4.53rem;
+}
+.pageThird .content .logo-page3{
+	width: 5.41rem;
+	margin: 0.85rem auto 0.61rem auto;
+}
+.pageThird .content .lightspot-1{
+	height: 0.67rem;
+	margin: 0 auto;
+}
+.pageThird .content .bg-page3{
+	width: 5.98rem;
+	height: 4.53rem;
+	margin: 0 auto;
+}
+.pageThird .content .lightspot-2{
+	height: 0.67rem;
+	margin: 0.63rem 0.37rem 0 auto;
+}
+.pageThird .content .lightspot-3{
+	height: 0.67rem;
+	margin: 3.7rem auto 0.6rem 0;
+}
+.pageThird .content .lightspot-4{
+	height: 0.67rem;
+	margin: 0 0 0 auto;
+}
+/* 第四页 */
+.pageFourth{
+	background-color: #fff;
+	background: url(../image/introduction/bg-page4.png) no-repeat;
+	background-position: bottom center;
+	background-size: 100% 110%;
+}
+.pageFourth .logo-page4{
+	width: 5.37rem;
+	margin: 0.84rem auto 0 auto;
+}
+.pageFourth .title{
+	width: 5.4rem;
+	margin: 0.2rem auto 0.45rem auto;
+	font-size:0.28rem;
+	font-family:PingFangSC-Regular;
+	font-weight:bold;
+	color:rgba(108,108,108,1);
+	line-height:0.5rem;
+}
+.pageFourth .tips{
+	font-size:0.22rem;
+	text-align: center;
+	font-family:PingFangSC-Regular;
+	font-weight:400;
+	text-decoration:underline;
+	color:rgba(68,68,68,1);
+	margin-top: 0.45rem;
+}
+.pageFourth .buyCar-step{
+	width: 6.36rem;
+	margin: 0.3rem auto 0.2rem auto;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pageFourth .buyCar-step2{
+	margin-top: -0.3rem;
+}
+.pageFourth .buyCar-step .step-item{
+	width: 3.12rem;
+	height: 2.93rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+.pageFourth .buyCar-step .step1{
+	background: url(../image/introduction/step-1.png) no-repeat center center;
+	background-size: 98% 98%;
+}
+.pageFourth .buyCar-step .step2{
+	background: url(../image/introduction/step-2.png) no-repeat;
+	background-position: right center;
+	background-size: 3.35rem 98%;
+}
+.pageFourth .buyCar-step .step3{
+	background: url(../image/introduction/step-3.png) no-repeat center center;
+	background-size: 98% 98%;
+}
+.pageFourth .buyCar-step .step4{
+	background: url(../image/introduction/step-4.png) no-repeat center center;
+	background-size: 98% 98%;
+}
+.pageFourth .buyCar-step .step-item div{
+	width: 2rem;
+	margin-left: 1.1rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.pageFourth .buyCar-step .step-item span{
+	font-size:0.36rem;
+	font-family:FZLTZHK--GBK1-0;
+	font-weight:600;
+	color:rgba(84,84,84,1);
+}
+.pageFourth .buyCar-step .step-item p{
+	width: 1.84rem;
+	font-size:0.26rem;
+	font-family:PingFangSC-Regular;
+	font-weight:400;
+	color:rgba(68,68,68,1);
+	line-height:0.48rem;
+}
+.pageFifth{
+	background: url(../image/introduction/bg-page5.png) no-repeat;
+	background-position: bottom center;
+	background-size: 100% 115%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+.pageFifth .content{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.pageFifth .content .logo-page{
+	width: 6rem;
+	margin-top: 0.97rem;
+}
+.pageFifth .content .page5-code{
+	width: 6.37rem;
+	margin-top: 0.42rem;
+}
+.pageFifth .content button{
+	width:3.94rem;
+	height:0.67rem;
+	background:rgba(8,175,120,1);
+	border-radius:0.1rem;
+	margin-top: 0.65rem;
+	font-size:0.28rem;
+	font-family:PingFangSC-Medium;
+	font-weight:500;
+	color:rgba(255,255,255,1);
+	border: 0;
+}
+/* music */
+/* music */
+.icon-music-outer{
+    display: inline-block;
+    width: .57rem;
+    height: .57rem;
+    position: fixed;
+    right: .34rem;
+    top: .34rem;
+    z-index: 100;
+}
+
+.forbid{
+    display: inline-block;
+    width: .77rem;
+    height: .77rem;
+	float: left;
+	background-image: url(../image/introduction/music_play.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.forbid.icon-music{
+    animation: rotate 5s linear infinite;
+}
+.icon-forbidMusic{
+    display: inline-block;
+    width: .77rem;
+    height: .77rem;
+    z-index: 101;
+	background-image: url(../image/introduction/music_end.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+audio{
+    position: absolute;
+    left: -300px;
+    display: none;
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}
